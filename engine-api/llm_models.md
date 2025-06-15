@@ -11,5 +11,5 @@
 - 月之暗面：Kimi 所使用的模型，参考文档 Moonshot https://platform.moonshot.cn/
 - 其他：其他兼容 OpenAI 模型接口的 API
 
-如有其他大模型的兼容需求，可在 百川论坛 发帖提需求。
+如有其他大模型的兼容需求，可在 我的博客 https://oddmeta.net 发帖提需求。
 

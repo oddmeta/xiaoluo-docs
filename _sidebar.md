@@ -21,6 +21,7 @@
 - **:anchor:后台引擎API**
 
     - [LLM引擎](engine-api/llm_models.md)
+    - [ASR引擎](engine-api/asr_engines.md)
 
 - [**:question:常见问题**](faq.md "Frequently Asked Questions")
 - [**:writing_hand:Changelog**](changelog.md)
