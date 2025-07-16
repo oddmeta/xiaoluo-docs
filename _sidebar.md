@@ -22,6 +22,7 @@
 
     - [LLM引擎](engine-api/llm_models.md)
     - [ASR引擎](engine-api/asr_engines.md)
+    - [通知引擎](engine-api/notify_engine.md)
 
 - [**:question:常见问题**](faq.md "Frequently Asked Questions")
 - [**:writing_hand:Changelog**](changelog.md)
