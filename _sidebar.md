@@ -19,7 +19,8 @@
     - [客户支持](scenarios/customer-support.md "customer-support")
 
 - **:anchor:后台引擎API**
-
+ 
+    - [Docker安装](engine-api/install_docker_on_ubuntu.md)
     - [LLM引擎](engine-api/llm_models.md)
     - [ASR引擎](engine-api/asr_engines.md)
     - [通知引擎](engine-api/notify_engine.md)
