@@ -1,6 +1,5 @@
-
 # Ubuntu 24.04上安装 Docker
-
+[TOC]
 ## 一些准备工作
 - 卸载旧版包：确保系统中没有旧版本的 Docker。
 - 设置 Docker 官方 APT 存储库：
@@ -23,3 +22,38 @@ sudo sed -i 's/\(cn.archive\|security\).ubuntu.com/mirrors.tuna.tsinghua.edu.cn/
 ## 验证安装
 
 使用 `docker --version` 命令检查 Docker 是否安装成功。
+
+## 一些收尾工作
+
+### 更换 Docker 镜像源
+Docker 默认从 Docker Hub 拉取镜像，国内网络访问 Docker Hub 可能较慢，你可以配置国内的 Docker 镜像源来加速拉取。
+
+#### Linux
+编辑 /etc/docker/daemon.json 文件，如果文件不存在则创建它，添加以下内容：
+```json
+{
+  "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "https://mirror.baidubce.com",
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+```
+保存文件后，重启 Docker 服务：
+```bash
+sudo systemctl restart docker
+```
+
+#### Windows
+如果你使用的是 Docker Desktop for Windows，右键点击系统托盘中的 Docker 图标，选择 Settings -> Docker Engine，在 JSON 配置中添加以下内容：
+
+```json
+{
+  "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "https://mirror.baidubce.com",
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+```
+点击 Apply & Restart 重启 Docker。

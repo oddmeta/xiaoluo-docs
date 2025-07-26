@@ -20,12 +20,16 @@
 
 - **:anchor:后台引擎API**
  
-    - [Docker安装](engine-api/install_docker_on_ubuntu.md)
     - [LLM引擎](engine-api/llm_models.md)
     - [ASR引擎](engine-api/asr_engines.md)
     - [通知引擎](engine-api/notify_engine.md)
 
-- [**:question:常见问题**](faq.md "Frequently Asked Questions")
+- **:ant:工具**
+    - [Docker安装](engine-api/install_docker_on_ubuntu.md)
+    - [Proxy代理设定](tools/proxy-setting.md)
+
+
+- [**:hedgehog:常见问题**](faq.md "Frequently Asked Questions")
 - [**:writing_hand:Changelog**](changelog.md)
 
 <!-- markdownlint-enable first-line-h1 -->
@@ -38,4 +42,7 @@
 * [Contact](contact.md)
 * [Privacy Policy](privacy-policy.md)
 * [Terms of Service](terms-of-service.md)
+
+emoji：https://github.com/docsifyjs/docsify/blob/develop/docs/emoji.md
+
 -->
