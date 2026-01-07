@@ -57,3 +57,14 @@ sudo systemctl restart docker
 }
 ```
 点击 Apply & Restart 重启 Docker。
+
+
+## 附录：一些常用的docker命令
+
+- 查看运行中的容器: `docker ps`
+- 查看运行中的容器日志: `docker logs -t oddasr-cpu`
+- 进入运行中的容器的bash: `docker exec -it oddasr-cpu bash`
+- 停止运行中的容器: `docker stop oddasr-cpu`
+- 删除容器: `docker rm oddasr-cpu`
+- 查看镜像images: `docker images`
+- 删除镜像image: `docker rmi IMAGE-ID`. `IMAGE-ID` is the image id, you can get it from `docker images`
