@@ -5,7 +5,8 @@ export default defineConfig({
   vite: {
     server: {
       port: 3001,
-      host: '0.0.0.0'
+      host: '0.0.0.0',
+      allowedHosts: ['docs.oddmeta.net','docs.oddmeta.com']
     }
   },
   title: "小奥文档",
