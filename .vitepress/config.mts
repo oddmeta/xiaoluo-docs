@@ -29,6 +29,7 @@ export default defineConfig({
       },
       { text: '开源项目', items: 
         [
+          { text: '点滴清单', link: '/products/reminders/index' },
           { text: 'OddAgent', link: '/products/oddagent' },
           { text: 'OddAsr', link: '/products/oddasr' },
           { text: 'OddTTS', link: '/products/oddtts' },
@@ -47,6 +48,17 @@ export default defineConfig({
           { text: '记忆管理', link: '/how-to-use/role-memory' },
           { text: '角色对话', link: '/how-to-use/role-play' },
           { text: '角色发布', link: '/how-to-use/role-publish' },
+        ]
+      },
+
+
+      {
+        text: '点滴清单',
+        items: [
+          { text: '项目介绍', link: '/products/reminders/index' },
+          { text: '隐私政策', link: '/products/reminders/privacy_policy' },
+          { text: '用户协议', link: '/products/reminders/user_agreement' },
+          { text: '用户手册', link: '/products/reminders/user_manual' },
         ]
       },
 
