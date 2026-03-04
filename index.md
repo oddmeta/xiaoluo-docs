@@ -24,6 +24,9 @@ features:
   - title: 小落同学
     details: 小落同学的前世今生
     link: /story
+  - title: 点滴清单
+    details: 开源的任务管理工具，帮助你更好地组织和管理你的闹钟、待办、提醒任务。
+    link: /products/reminders/index
   - title: OddAgent
     details: 一个通用的意图、指令识别框架
     link: /products/oddagent

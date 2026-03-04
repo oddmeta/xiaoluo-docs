@@ -15,8 +15,13 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: '如何使用？', link: '/how-to-use' },
-      { text: '关于小落同学', link: '/story' }, 
+      { text: '开源项目', items: 
+        [
+          { text: '点滴清单', link: '/products/reminders/index' },
+          { text: '小落同学', link: '/story' },
+        ]
+      },
+
       { text: '典型场景', items: 
         [
           { text: '个人空间', link: '/scenarios/personal' },
@@ -27,15 +32,26 @@ export default defineConfig({
           { text: '旅行助手', link: '/scenarios/travel' },
         ]
       },
-      { text: '开源项目', items: 
+
+      { text: '开源组件', items: 
         [
-          { text: '点滴清单', link: '/products/reminders/index' },
           { text: 'OddAgent', link: '/products/oddagent' },
           { text: 'OddAsr', link: '/products/oddasr' },
           { text: 'OddTTS', link: '/products/oddtts' },
           { text: 'OddNotifier', link: '/products/oddnotifier' }
         ]
+      },
+
+      {
+        text: "联系我们",
+        link: "https://oddmeta.net/contact",
+      },
+
+      {
+        text: "关于我们",
+        link: "https://oddmeta.net/about",
       }
+
     ],
 
     sidebar: [
