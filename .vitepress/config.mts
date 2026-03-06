@@ -4,10 +4,18 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   vite: {
     server: {
+      fs: {
+        // 明确拒绝访问 .git 目录
+        deny: ['.git', '.env', '.env.*', 'node_modules'],
+      },
+	
       port: 3001,
       host: '0.0.0.0',
       allowedHosts: ['docs.oddmeta.net','docs.oddmeta.com']
-    }
+    },
+
+    // 可选：进一步限制扫描包含的文件
+    include: [/\.vue$/, /\.md$/, /\.ts$/, /\.js$/, /\.jsx$/, /\.tsx$/],
   },
   title: "小奥文档",
   description: "小落同学文档中心。",
