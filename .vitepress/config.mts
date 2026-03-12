@@ -4,18 +4,14 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   vite: {
     server: {
-      fs: {
-        // 明确拒绝访问 .git 目录
-        deny: ['.git', '.env', '.env.*', 'node_modules'],
-      },
-	
       port: 3001,
       host: '0.0.0.0',
-      allowedHosts: ['docs.oddmeta.net','docs.oddmeta.com']
-    },
-
-    // 可选：进一步限制扫描包含的文件
-    include: [/\.vue$/, /\.md$/, /\.ts$/, /\.js$/, /\.jsx$/, /\.tsx$/],
+      allowedHosts: ['docs.oddmeta.net','docs.oddmeta.com'],
+      fs: {
+        // 拒绝访问 .git 目录
+        deny: ['.git', 'node_modules', '.venv'],
+      }
+    }
   },
   title: "小奥文档",
   description: "小落同学文档中心。",
@@ -82,7 +78,7 @@ export default defineConfig({
           { text: '项目介绍', link: '/products/reminders/index' },
           { text: '隐私政策', link: '/products/reminders/privacy_policy' },
           { text: '用户协议', link: '/products/reminders/user_agreement' },
-          { text: '用户手册', link: '/products/reminders/user_manual' },
+          { text: '用户手册', link: '/products/reminders/user_manual-v1.3.0' },
         ]
       },
 

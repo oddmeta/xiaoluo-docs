@@ -2,6 +2,16 @@
 
 一个完整的生日提醒、节日提醒、闹钟、待办事项管理系统。
 
+## 介绍
+
+2026年寒假期间，由于从应用市场上下载的一些提醒、待办工具要么一堆花里胡哨功能，要么不满足我的需求，还老是提示我开会员交钱，烦死了。于是，我开始开发《点滴清单》。该项目的目标是创建一个功能完善的提醒管理系统，帮助用户管理和提醒重要事件。
+
+经过一个多星期的开发，《点滴清单》的基本功能已经完善。目前，它支持用户注册登录、设置提醒、查看提醒、删除提醒等基本操作。
+
+- Web端：支持PC端和移动端访问。 [https://todo.oddmeta.net](https://todo.oddmeta.net)
+- 移动端：使用Android的WebView组件实现，支持Android系统。下载地址：[https://gitee.com/oddmeta/reminders/releases/tag/v1.0.1](https://gitee.com/oddmeta/reminders/releases/tag/v1.0.1)
+- 桌面端：使用electron框架，支持Windows/macOS/Linux系统。下载地址：[https://gitee.com/oddmeta/reminders/releases/tag/v1.0.1](https://gitee.com/oddmeta/reminders/releases/tag/v1.0.1)
+
 ## 功能特性
 
 - **多用户支持**: 基于Django用户系统，安全可靠
