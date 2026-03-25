@@ -10,7 +10,10 @@ export default defineConfig({
       fs: {
         // 拒绝访问 .git 目录
         deny: ['.git', 'node_modules', '.venv'],
-      }
+      },
+      hmr: {
+        overlay: false // 添加这一行来禁用错误覆盖层
+      },
     }
   },
   title: "小奥文档",
