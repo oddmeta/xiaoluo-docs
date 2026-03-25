@@ -13,7 +13,7 @@ export default defineConfig({
       },
       hmr: {
         overlay: false // 添加这一行来禁用错误覆盖层
-      },
+      }
     }
   },
   title: "小奥文档",
@@ -132,7 +132,7 @@ export default defineConfig({
     // 站点页脚配置
     footer: {
       // message: "Released under the MIT License",
-      copyright: "Copyright © 2023-present OddMeta.<br><a href="https://beian.mps.gov.cn/#/query/webSearch?code=31011302008989" rel="noreferrer" target="_blank"><img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png"> 沪公网安备31011302008989号</a>  <a class="czr-wp-powered-link" href="https://beian.miit.gov.cn/" rel="external nofollow" target="_blank">沪ICP备18041804号</a>",
+      copyright: "<div style='display: flex; justify-content: center; align-items: center; gap: 4px; text-align: center;'><span>Copyright © 2023-present OddMeta.</span></div><div style='display: flex; justify-content: center; align-items: center; gap: 4px; margin: 4px 0;'><a href='https://beian.mps.gov.cn/#/query/webSearch?code=31011302008989' rel='noreferrer' target='_blank' style='display: flex; align-items: center; text-decoration: none; color: inherit;'><img src='https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png' width='24' height='24' style='vertical-align: middle; margin-right: 4px;' alt='police badge'>      <span>沪公网安备31011302008989号</span></a></div><div style='margin: 4px 0;'><a href='https://beian.miit.gov.cn/' rel='external nofollow' target='_blank'>沪ICP备18041804号</a></div>",
     },
   }
 })
