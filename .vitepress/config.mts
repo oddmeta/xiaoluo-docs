@@ -129,7 +129,7 @@ export default defineConfig({
     // 站点页脚配置
     footer: {
       // message: "Released under the MIT License",
-      copyright: "Copyright © 2023-present OddMeta.<br>沪ICP备18041804号",
+      copyright: "Copyright © 2023-present OddMeta.<br><a href="https://beian.mps.gov.cn/#/query/webSearch?code=31011302008989" rel="noreferrer" target="_blank"><img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png"> 沪公网安备31011302008989号</a>  <a class="czr-wp-powered-link" href="https://beian.miit.gov.cn/" rel="external nofollow" target="_blank">沪ICP备18041804号</a>",
     },
   }
 })
